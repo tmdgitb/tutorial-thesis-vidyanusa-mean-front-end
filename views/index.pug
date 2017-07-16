@@ -3,5 +3,6 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  a(href='/tambah') Tambah Pengguna
   ul(ng-repeat='pengguna in paraPengguna')
     li {{pengguna.id}} - {{pengguna.email}} - {{pengguna.sandi}}

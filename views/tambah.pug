@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  form(method='post',action='/proses_tambah')
+    span Email:
+    input(type='email',placeholder='tulis email',name='email')
+    span Sandi:
+    input(type='password',placeholder='tulis sandi',name='sandi')
+    button(type='submit') Kirim
